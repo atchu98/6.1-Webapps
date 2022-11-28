@@ -19,3 +19,5 @@
 - It includes elements to demonstrate format and functionality
 - Elements are organised to achieve a particular purpose or goal  
 ![](Wireframe%20ex.JPG)
+
+![](htmlcss.JPG)
