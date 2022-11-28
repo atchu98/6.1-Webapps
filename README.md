@@ -139,3 +139,42 @@ a.button1:active{
 }
 
 ```
+
+### css
+- class in HTML can be identified by using a .
+- id in HTML can be used using a #
+- attributes like h1, h2 can be used directly
+- ID specifies to only 1 item
+- class to any item in the same class
+- attributes to any other similar type attributes
+
+```css
+
+h1{
+    color:blue;
+    text-align: left;
+    background-color: #f0f8ff;
+    margin: 10%;
+    font-family: cursive;
+}
+
+
+h2{
+    color:blue;
+    text-align:center;
+    background-color: rgb(244, 244, 244);
+    width:50%;
+}
+```
+
+- the above affects all headers type h1 and h2
+
+![](block.JPG)
+
+![](block2.JPG)
+
+![](cssbox.JPG)
+
+![](responsive%20design.JPG)
+
+![](response.JPG)

@@ -78,4 +78,101 @@
 ```html
     <link rel="stylesheet" href="stylefirst.css" />
  ```
- - in css we
+ - in css we can have class id and use attributes to identify and change the deign
+ 
+```css
+
+h1{
+    color:blue;
+    text-align: left;
+    background-color: #f0f8ff;
+    margin: 10%;
+    font-family: cursive;
+}
+
+
+h2{
+    color:blue;
+    text-align:center;
+    background-color: rgb(244, 244, 244);
+    width:50%;
+}
+
+
+#design{
+    color:rgb(34, 252, 204);
+    text-align:center;
+    background-color: rgb(231, 24, 24);
+    width:70%;
+}
+
+.assessment{
+    color:rgb(255, 255, 255);
+    text-align:left;
+    background-color: rgb(36, 9, 134);
+    width:70%;
+    font-weight: lighter;
+}
+
+a.button1{
+    background-color: blanchedalmond;
+    display: inline-block;
+    padding: 0.5em 3em;
+    border: 0.16em solid #FFFFFF;
+    margin:0 0.3em 0.3em 0;
+    box-sizing: border-box;
+    text-decoration:none;
+    text-transform:uppercase;
+    font-family:'Roboto',sans-serif;
+    color:#000000;
+    text-align: center;
+    transition: all 0.15s;
+    }
+
+a.button1:hover{
+    color: #dddddd;
+    border-color:#DDDDDD;
+}
+a.button1:active{
+    color: #0000ff;
+    border-color: #0800ff
+}
+
+```
+
+### css
+- class in HTML can be identified by using a .
+- id in HTML can be used using a #
+- attributes like h1, h2 can be used directly
+- ID specifies to only 1 item
+- class to any item in the same class
+- attributes to any other similar type attributes
+
+```css
+
+h1{
+    color:blue;
+    text-align: left;
+    background-color: #f0f8ff;
+    margin: 10%;
+    font-family: cursive;
+}
+
+
+h2{
+    color:blue;
+    text-align:center;
+    background-color: rgb(244, 244, 244);
+    width:50%;
+}
+```
+
+- the above affects all headers type h1 and h2
+
+![](block.JPG)
+
+![](block2.JPG)
+
+![](responsive%20design.JPG)
+
+![](response.JPG)
