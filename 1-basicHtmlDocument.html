@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<!--
+============================================================================== 
+
+Demo Title:
+	�  basicHtmlDocument.html
+
+Topics Covered:
+	�  	HTML document basics including main elements and DOCTYPE
+	�  	Block and inline elements
+	�  	Id and class attributes
+	�  	Basic CSS rules
+
+Notes:
+	�  	Create all HTML tags before any CSS rules
+	
+============================================================================== 
+-->
+<!-- This is a comment block. Multi-line and single line comments are the same in HTML. -->
+<!--
+�  The DOCTYPE above tells the browser how it needs to display the file.
+�  The DOCTYPE MUST be the first line in the document, before any comments or whitespace.
+�  The browser doesn't read file extensions and so this is the only way it knows how to correctly display the content.
+�  This shows the browser that it should use HTML5.
+-->
+<!--
+�  The whole HTML document is encapsulated in <HTML> tags explain the difference between tags and elements here if not covered in XML)
+�  HTML is based upon XML and so has opening and closing tags
+-->
+<html>
+	<!--
+	�  The <head> tag contains metadata about the web page.
+	�  Anything inside the head isn't displayed.
+	-->
+	<head>
+		<!--
+		�  The title tag contains the title of the current page.
+		�  Some browsers use this for the text shown in the tab or at the top of the Windows bar.
+		-->
+		<title>Title of the web page</title>
+		<!--
+		�  The link tag allows the HTML page to link to an external stylesheet that holds CSS rules.
+		�  More about CSS rules to follow in a later example.
+		�  The rel attribute explains the relationship between the current document and the file being linked to.
+		�  The href attribute stands for Hypertext Reference. It is a relative path from the root of the web server.
+		-->
+		<link rel="stylesheet" href="styles.CSS" />
+		<!--
+		�  Meta tags are key-value stores.
+		�  The name attribute is used to specify the key and the content is the value.
+		�  In this example, search engines read the 'description' key and use the content to give a brief snippet of what the website is for.
+		�  There are other recognised meta tag names such as 'author' and 'keywords'.
+		-->
+		<meta name="description" content="Our First Website. Designed to show the basic structure" />
+		<!--
+		�  The head element is ended by the </head> closing tag, note the forward slash.
+		-->
+	</head>
+	<!--
+	�  The Body tag defines the body of the HTML document.
+	�  Everything inside the body tag is rendered to the page.
+	�  It contains all of the contents of HTML document.
+	-->
+	<body>
+		<!--
+		�  This tag is used to display a heading, we can use H1 through to H6 depending on the level of heading.
+		�  A web page is built up of different tags, these HTML tags are used to define the structure of the document.
+		�  CSS is used to add styling to the web page. Styling and structure MUST be kept separate by pushing styling into CSS stylesheets.
+		�  id attributes are used to identify a specific element.
+		�  An element can only have one id and and id can only be associated with one element.
+		-->
+		<h1 id="main-title">Our First Web Page</h1>
+		<h2 id="sub-title">This is a sub heading</h2>
+		
+		<!--
+		�  These tags are 'anchor' tags. They are use to create links to other pages.
+		�  They are inline elements, meaning they will be positioned next to each other from left to right.
+		�  The href attribute is used to tell the browser what page or website to link to.
+		�  href values can be absolute or relative paths.
+		�  The class attribute is used for applying CSS styling.
+		�  We can add multiple classes to one element and multiple elements can share a single class.
+		�  All HTML elements can have one or more classes.
+		�  We will show how CSS uses these class names soon.
+		-->
+		<a class="button" href="about.HTML">About</a>
+		<a class="button" href="contact.HTML">Contact</a>
+		<a class="button highlight" href="http://www.fdmgroup.com">FDM Group</a>
+		
+		<!--
+		�  divs are block level elements.
+		�  div tags are used for 'divisions', they help us define a structure for the HTML document.
+		�  divs are often used to encase multiple elements into a group.
+		�  Sometimes they are used as 'wrappers' or 'containers'.
+		-->
+		<div class="wrapper">
+			<!--
+			�  p tags are used to contain the text of a paragraph. They are block elements.
+			�  They can contain inline elements as well as text.
+			�  If they do contain inline elements, they appear inline with the rest of the text.
+			�  Use http://www.lipsum.com/ to generate nonsense text.
+			�  TRAINER-TIP: usually a p tag is all on one line, this one has been broken up to fit the 
+				comments about <img> tags in.
+			-->
+			<p>
+				<!--
+				�  img tags are used to hold images, they are inline elements by default.
+				�  They have a src attribute where we state the source of the image.
+				�  TRAINER-TIP: We can use https://placeimg.com/ to gerenate placeholder images for use on the course.
+				-->
+				<img src="https://placeimg.com/100/100/nature" />
+				<img src="https://placeimg.com/100/100/arch" />
+				<!--
+					TRAINER-TIP: Add the class of float-right in the next demo.
+				-->
+				<img src="https://placeimg.com/100/100/people" />
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse nulla nibh, bibendum ac elit nec, semper auctor nulla. Fusce eu sodales sapien. Sed tristique, nulla et suscipit imperdiet, tellus tellus cursus arcu, sed congue est risus in sem. Interdum et malesuada fames ac ante ipsum primis in faucibus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse nulla nibh, bibendum ac elit nec, semper auctor nulla. Fusce eu sodales sapien. Sed tristique, nulla et suscipit imperdiet, tellus tellus cursus arcu, sed congue est risus in sem. Interdum et malesuada fames ac ante ipsum primis in faucibus.
+			</p>
+		</div>
+		
+	</body>
+</html>

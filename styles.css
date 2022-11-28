@@ -1,0 +1,96 @@
+/*
+============================================================================== 
+
+Demo Title:
+	•  styles.css for basicHtmlDocument.html
+
+Topics Covered:
+	•  	Basic CSS syntax
+	•	Simple ways to select elements by ID and class
+	•	How to create more complex selectors
+
+Notes:
+	•  	Create all of the HTML in the associated html file first
+	
+==============================================================================
+*/
+/*
+•  This is a basic CSS rule-set
+•  It consists of:
+		selector -> #main-title
+		declaration -> background: #2eabe2;
+					-> color: #FFFFFF;
+•  This selector will select the element with an id of main-title.
+•  It does this by using the # symbol at the start.
+*/
+#main-title {
+	font-size: 2em; /* This property sets the font size to twice that of the default size.
+					   More on this to follow. */
+}
+
+/*
+•  Using a comma between selectors will give us the ability to select multiple selectors at once.
+•  This is also an example of how we can select all elements of a set type.
+       •  all h1 and all h2 elements in this case.
+*/
+h1, h2 {
+	background: #2eabe2; /* Here we are setting the background colour using a hex value.
+							we can use https://www.w3schools.com/colors/colors_picker.asp
+							to see values*/
+	color: #FFFFFF; /* We can use the color property to set the text colour. note the american spelling. */
+	text-align: center;
+}
+
+
+body {
+	background: #bcbcbc;
+}
+
+/*
+•  using a . at that start of the selector allows us to select classes.
+•  This will select all elements with the class name of button.
+*/
+.button {
+	background: #f9b041;
+	color: #FFFFFF;
+	padding: 8px; /* padding adds space betteen the edge of the element and the content 
+					  this will add 8px to the top, right, bottom and left of the element.
+					  More about this to come. */
+}
+
+/*
+•  Using 2 class selectors one directly after another, allows us select all elements
+     that contain both of these classes.
+*/
+.button.highlight {
+	border: 2px solid #2eabe2;
+}
+
+.wrapper {
+	background: #2eabe2;
+	color: #FFFFFF;
+	padding: 10px;
+	margin-top: 10px; /* margin adds space outside of the edge of the element. This will
+						 add 10px to the top element.
+						 More about this to come. */
+}
+
+p {
+	background: #1a86b6;
+	padding: 20px;
+}
+
+/*
+•  Placeing 2 selectors next to each other will select the 2nd one when it is a child of the 1st.
+•  So this will select all image elements inside a paragraph
+*/
+p img {
+	border: 5px solid #f9b041;
+}
+
+/*
+•  Add this rule in the 1st demo for floats.
+*/
+.float-right {
+	float: right;
+}
