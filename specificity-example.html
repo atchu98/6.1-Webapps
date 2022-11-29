@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        /*The CSS below is impacting on the header(h1) element only. Which colour will it be?*/
+        /*0,1,0,0 inline,id,class,element  */
+        
+        #heading-1 {
+            color: darkred;
+        }
+        /*0,0,1,0 - It will not appear blue . #heading-1 has a higher specificity*/
+        
+        .head {
+            color: blue;
+        }
+        /*the last rule should mean that h1 would be 
+        green and display when we render. However, specificity means #heading-1
+        wins it when you count specificity*/
+        /*0,0,0,1*/
+        
+        h1 {
+            color: green;
+        }
+        
+        
+    </style>
+</head>
+
+<body>
+    <h1 id="heading-1" class="head">Specificity including Classes and Id</h1>
+    <p class="para1">
+        aak met letters nam en ze door elkaar husselde om een font-catalogus te maken. Het heeft niet alleen vijf eeuwen overleefd maar is ook, vrijwel onveranderd, overgenomen in elektronische letterzetting. Het is in de jaren '60 populair geworden met de introductie
+        van Letraset vellen met Lorem Ipsum passages en meer recentelijk door desktop publishing software zo
+    </p>
+
+</body>
+
+</html>

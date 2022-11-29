@@ -178,3 +178,33 @@ h2{
 ![](responsive%20design.JPG)
 
 ![](response.JPG)
+
+![](css%20specificty.JPG)
+examples
+- `p { }`   => 0001
+- `.demo { }`  => 0010
+- `p .demo { }`   => 0011
+- `h1 { }`   => 0001
+- `# large-heading { }`   => 0100
+- `h1.main-heading { … }` => 0011
+-   `header  .container  .float-left  .highlight h1 { … }`    => 0032
+- `<h1 style=“color:red;”>FDM Group</h1>`   => 1001
+
+![](calc.JPG)
+
+### Floats
+- The float CSS property specifies that an element is taken from the normal flow
+- It is placed along the left or right side of its container
+- Text and inline elements will wrap around it
+- The last <img> element has now been floated right
+
+![](flaot.JPG)
+- Floats can be used to position divs as well as inline elements.
+- Using float on an element causes it to become a block element with the width of its content. We should always specify a width when floating.
+- Floated elements are removed from the normal flow of the document, causing elements in the normal flow to overlap them.
+- To stop this, we can place them in a containing element.
+
+![](Picture1.png)
+
+
+

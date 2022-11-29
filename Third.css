@@ -1,0 +1,10 @@
+.demo {
+	background: rgb(0,0,0);
+	color: rgb(255,255,255); 
+	border: 10px solid red;
+}
+#demo {
+	background: red;
+	color: blue; 
+	border: 5px dashed black;
+}
