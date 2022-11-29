@@ -1,0 +1,66 @@
+.box{
+	height:400px;
+	width:400px;
+	border:solid rgb(0,0,0) 5px;
+	margin:150px;
+    position:relative;
+}
+.small-box1,.small-box2{
+	height:150px;
+	width:150px;
+}
+
+.small-box1{
+	background:rgb(0,0, 100);
+	/*background: linear-gradient(blue, pink, transparent);*/
+	/*transform: translateY(%);*/
+
+	
+}
+.small-box2{
+	background:rgb(150,0,0);   
+	position: relative;
+	/*bottom: -25%;
+	right: -62.5%;*/
+}
+
+/*Relative positioning.  Add the following to .small-box2 above:
+
+position:relative;
+top:40px;
+left:150px;
+
+
+*/
+
+
+/*Fixed positioning. Delete the relative positioning properties. Add the following to .small-box2 above:
+
+position:fixed;
+top:0px;
+left:0px;
+
+...and scroll up and down (you may need to zoom in temporarily to scroll up and down in order to test this, or else add another div with box class below)
+
+
+*/
+
+
+/*Absolute positioning.  Delete the relative positioning properties. 
+1) Add the following to .small-box2 above:
+
+position:absolute;
+top:40px;
+left:150px;
+
+...and see what happens
+
+2) Then, add the following to .box above:
+
+position:relative;
+
+
+...and see what happens
+*/
+
+
