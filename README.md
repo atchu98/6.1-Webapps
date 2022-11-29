@@ -197,6 +197,15 @@ examples
 - It is placed along the left or right side of its container
 - Text and inline elements will wrap around it
 - The last <img> element has now been floated right
+```html
+<img class="float-right"src="https://placeimg.com/100/100/people" />
+```
+
+```css
+.float-right {
+	float: right;
+}
+```
 
 ![](flaot.JPG)
 - Floats can be used to position divs as well as inline elements.
@@ -208,3 +217,94 @@ examples
 
 
 
+```html
+	<div class="outer-div">
+
+	<br>
+	   <div class="inner1-div">
+	       <p>Tuesday content</p>
+	       <p>Tuesday content</p>
+	   </div>
+	
+	   <div class="inner2-div">
+	       <p>Tuesday content</p>
+	       <p>Tuesday content</p>
+	   </div>
+	
+	</div>
+
+```
+
+
+exercise1 to create css file using floats
+```html
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href = "div-percentage-float-slide-25.css">
+</head>
+<body>
+	<h1>h1 heading</h1>
+	<div id="outer-div" >
+	<br>
+	<div id="left-inner-div" >
+		<a href="#dummy.html">Link1</a>
+		<a href="#dummy.html">Link2</a>
+		<a href="#dummy.html">Link3</a>
+	</div>
+	<div id="right-inner-div" >
+		<h2>h2 heading</h2>
+		<p>paragraph</p>
+	</div>
+	</div>
+
+</body>
+</html>
+```
+
+
+
+```css
+h1{
+    background-color: rgba(145, 145, 0, 0.894);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+h2{
+    background-color: red;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+#outer-div{
+    background-color: #89CFF0;
+    padding: 0.20em;
+    height: 180px;
+    border: 0.2em rgb(16, 168, 188);
+    border-style: solid;
+}
+#left-inner-div{
+    background-color: grey;
+    float:left;
+    width: 25%;
+    height: 120px;
+}
+#right-inner-div{
+    float:right;
+    width: 75%;
+    background-color: green;
+    height: 120px;
+}
+p{
+    color: azure;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+#left-inner-div a {
+    display: block;
+    background-color:  yellow;
+    width: 100px;
+    margin-bottom: 3px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+```
+
+![](box%20model.JPG)

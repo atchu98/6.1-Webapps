@@ -1,0 +1,28 @@
+h1 {
+	background: lightblue;
+	text-align: center;
+}
+
+
+.outer-div {background: lightblue;
+			height: 200px}
+			
+.inner1-div{background:grey;
+			height: 150px;
+			width: 49.5%;
+			float:left;
+}
+
+p{
+	background:deepskyblue;
+	width: 120px;
+	margin-left:200px;
+	border: yellow solid 3px;
+	
+}
+
+.inner2-div{background:grey;
+			height: 150px;
+			width: 49.5%;
+			float:right;
+}
